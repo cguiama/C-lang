@@ -1,0 +1,1 @@
+This repository was created to study C language following ALURA Cursos online courses.
