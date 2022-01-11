@@ -18,15 +18,32 @@ int main()
     for (int i = 0; i < strlen(palavrasecreta); i++)
     {
       int achou = 0;
-
+      //este loop varre a variavel para verificar se há um valor inputado em chutes, dentro da palavra secreta;
       for (int j = 0; j < tentativas; j++)
       {
         if (chutes[j] == palavrasecreta[i])
+        {
           achou = 1;
-        break;
+          break;
+        }
       }
-      //if()
+      if (achou)
+      {
+        printf("%c ", palavrasecreta[i]);
+      }
+      else
+      {
+        printf("_ ");
+      }
     }
+    printf("\n");
+
+    char chute;
+    printf("Qual a letra? ");
+    scanf(" %c", &chute);
+
+    chutes[tentativas] = chute;
+    tentativas++;
   } while (!acertou && !errou);
 }
 
