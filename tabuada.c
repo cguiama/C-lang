@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+void potencia(int m);
+
 int main()
 {
   int numero;
-  printf("Qual tabuada você quer?");
+  printf("Qual o multiplicador você quer?");
   scanf("%d", &numero);
 
   for (int i = 0; i <= 10; i++)
